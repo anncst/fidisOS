@@ -19,22 +19,23 @@ export default function Tabs() {
     ])
     
     return( 
-        <SafeAreaView style={{flex:1}}>
-            <View style={globalStyles.container}>
-                <View style={globalStyles.songContainer}>
-                    <FlatList
-                        contentContainerStyle={globalStyles.list}
-                        data={songs}
-                        renderItem={({item}) => (
-                            <View style={globalStyles.songLine}>
-                                <View>
-                                    <Text style={globalStyles.songTitle}>{item.title}</Text>
-                                    <Text style={globalStyles.songAuthor}>{item.author}</Text>
-                                </View>  
-                            </View>
-                        )}
-                    />
-                </View>
+        <SafeAreaView style={globalStyles.container}>
+            <View style={globalStyles.header}>
+                <Text style={globalStyles.headerText}>Top Songs!</Text>
+            </View>
+            <View style={globalStyles.content}>
+                <FlatList
+                    contentContainerStyle={globalStyles.list}
+                    data={songs}
+                    renderItem={({item}) => (
+                        <View style={globalStyles.songLine}>
+                            <View>
+                                <Text style={globalStyles.songTitle}>{item.title}</Text>
+                                <Text style={globalStyles.songAuthor}>{item.author}</Text>
+                            </View>  
+                        </View>
+                    )}
+                />
             </View>
         </SafeAreaView>
             
