@@ -7,7 +7,6 @@ import Tabs from './components/Tabs';
 import { AntDesign } from '@expo/vector-icons'; 
 import FavoriteSongs from './components/FavoriteSongs';
 import { Feather } from '@expo/vector-icons'; 
-import {PlatformColor} from 'react-native';
 import globalStyles from './global/globalStyles';
 
 const Tab = createMaterialBottomTabNavigator();

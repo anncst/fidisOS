@@ -7,6 +7,10 @@ export default StyleSheet.create({
         backgroundColor: PlatformColor("secondarySystemBackground"),
     },
 
+    welcomeContainer:{
+
+    },
+
     welcomeText:{
         textAlign:'center',
         fontSize: 26,
@@ -66,5 +70,18 @@ export default StyleSheet.create({
 
     headerText:{
         fontSize: 20,
+    },
+    inputStyle:{
+        backgroundColor: '#fff',
+        width:'70%',
+        marginLeft: 20,
+        borderColor: '#ddd',
+        borderWidth: 1,
+        borderRadius: 15,
+        padding: 10,
+    },
+    inputContainer:{
+        flexDirection: "row",
+        alignSelf:'center',
     }
 })
