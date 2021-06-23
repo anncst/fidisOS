@@ -15,8 +15,8 @@ export default function Home() {
                     placeholder="Search song"
                 />
                 <TouchableOpacity>
-                    <Text>
-                        <Feather name="search" size={24} color="black" />
+                    <Text style={globalStyles.searchButton}>
+                        <Feather name="search" size={28} color="black" />
                     </Text>
                 </TouchableOpacity>
             </View>

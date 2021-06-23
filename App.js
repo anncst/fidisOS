@@ -18,25 +18,24 @@ export default function App() {
         activeColor="#80B4FB"
         inactiveColor="#8D8D8D"
         labeled={false}
-        barStyle={globalStyles.barStyle}
-      >
-            <Tab.Screen name="Home" component={Home} 
-              options={{
-                tabBarLabel:"Home",
-                tabBarIcon: ({color}) => (<AntDesign name="home" size={24} color={color} /> )
-              }}
-            />
-            <Tab.Screen name="Tabs" component={Tabs} 
-              options={{
-                tabBarIcon: ({color}) => (<Feather name="list" size={24} color={color} /> )
-              }}
-            />
-            <Tab.Screen name="FavoriteSongs" component={FavoriteSongs}
-              options={{
-                tabBarIcon: ({color}) => (<AntDesign name="heart" size={24} color={color}/> )
-              }}
-            />
-        </Tab.Navigator>
+        barStyle={globalStyles.barStyle}>
+          <Tab.Screen name="Home" component={Home} 
+            options={{
+              tabBarLabel:"Home",
+              tabBarIcon: ({color}) => (<AntDesign name="home" size={24} color={color} /> )
+            }}
+          />
+          <Tab.Screen name="Tabs" component={Tabs} 
+            options={{
+              tabBarIcon: ({color}) => (<Feather name="list" size={24} color={color} /> )
+            }}
+          />
+          <Tab.Screen name="FavoriteSongs" component={FavoriteSongs}
+            options={{
+              tabBarIcon: ({color}) => (<AntDesign name="heart" size={24} color={color}/> )
+            }}
+          />
+      </Tab.Navigator>
     </NavigationContainer>
   );
 }

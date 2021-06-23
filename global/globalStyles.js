@@ -54,12 +54,8 @@ export default StyleSheet.create({
 
     header:{
         backgroundColor: PlatformColor("secondarySystemBackground"),
-        alignSelf:'stretch',
-        alignItems:'center',
         borderBottomColor: PlatformColor('separator'),
         borderBottomWidth:0.5, 
-        padding:10,
-        
     },
 
     barStyle:{
@@ -69,19 +65,26 @@ export default StyleSheet.create({
     },
 
     headerText:{
-        fontSize: 20,
+        fontSize: 24,
     },
+
     inputStyle:{
         backgroundColor: '#fff',
-        width:'70%',
+        width:'80%',
         marginLeft: 20,
         borderColor: '#ddd',
         borderWidth: 1,
         borderRadius: 15,
         padding: 10,
     },
+
     inputContainer:{
         flexDirection: "row",
         alignSelf:'center',
+        alignItems: 'center',
+    },
+
+    searchButton:{
+        paddingLeft: 4,
     }
 })
