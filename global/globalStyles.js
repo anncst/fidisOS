@@ -68,7 +68,7 @@ export default StyleSheet.create({
         fontSize: 24,
     },
 
-    inputStyle:{
+    searchStyle:{
         backgroundColor: '#fff',
         width:'80%',
         marginLeft: 20,
@@ -78,7 +78,7 @@ export default StyleSheet.create({
         padding: 10,
     },
 
-    inputContainer:{
+    searchContainer:{
         flexDirection: "row",
         alignSelf:'center',
         alignItems: 'center',
@@ -86,5 +86,25 @@ export default StyleSheet.create({
 
     searchButton:{
         paddingLeft: 4,
+    },
+    
+    textInput:{
+        borderWidth: 1,
+        borderColor: '#ddd',
+        borderRadius: 15,
+        backgroundColor: '#fff',
+        padding:6,
+        
+    },
+
+    inputContainer:{
+        alignItems:'center',
+    },
+    inputElement:{
+        width:'100%',
+        padding: 8,
+    },
+    label:{
+        marginBottom: 4,
     }
 })

@@ -8,9 +8,9 @@ export default function Home() {
     const [search, setSearch ] = useState()
     return(
         <SafeAreaView style={globalStyles.container}>
-            <View style={globalStyles.inputContainer}>
+            <View style={globalStyles.searchContainer}>
                 <TextInput 
-                    style={globalStyles.inputStyle}
+                    style={globalStyles.searchStyle}
                     onChangeText={(val) => setSearch(val)}
                     placeholder="Search song"
                 />

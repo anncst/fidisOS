@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 import TabsList from './TabsList';
 import { TouchableOpacity } from 'react-native';
@@ -16,7 +16,7 @@ export default function Tabs() {
                 name={"Top Songs"} 
                 options= { ({navigation}) => ({
                     headerRight: () => (
-                        <TouchableOpacity style={globalStyles.addSongButton} onPress={() => navigation.navigate('AddSongScreen')}>
+                        <TouchableOpacity style={globalStyles.addSongButton} onPress={() => navigation.navigate('Add Song')}>
                             <Ionicons name="add" size={30} color="black" />
                         </TouchableOpacity>
                     ),
@@ -25,7 +25,7 @@ export default function Tabs() {
                 component={TabsList}
             />
             <Stack.Screen 
-                name="AddSongScreen"
+                name="Add Song"
                 component={AddSongScreen}
             />
         </Stack.Navigator>

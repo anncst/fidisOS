@@ -21,7 +21,6 @@ export default function TabsList (){
         },
 
     ])
-
     return(
         <SafeAreaView style={globalStyles.container}>
                 <View style={globalStyles.content}>
